@@ -22,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/yeon_sung"
         android:text="Waves Of Food"
         android:textColor="@color/black"
         android:textSize="40sp"
@@ -37,17 +38,19 @@
         android:text="Deliever Favorite Food"
         android:textColor="@color/black"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.143" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Design By\nNeatRoots"
+        android:layout_marginBottom="64dp"
+        android:text="Design By\nVaibhaw Soni"
         android:textAlignment="center"
         android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
