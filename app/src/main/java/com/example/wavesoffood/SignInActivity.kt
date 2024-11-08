@@ -6,19 +6,18 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.wavesoffood.databinding.ActivityLogInBinding
-import com.example.wavesoffood.databinding.ActivityStartBinding
+import com.example.wavesoffood.databinding.ActivitySignInBinding
 
-class LogInActivity : AppCompatActivity() {
-    private val binding: ActivityLogInBinding by lazy {
-        ActivityLogInBinding.inflate(layoutInflater)
-    }
+class SignInActivity : AppCompatActivity() {
+     private lateinit var binding: ActivitySignInBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.dontHaveAccount.setOnClickListener {
-            val intent = Intent(this, SignInActivity::class.java)
+        binding.alreadyHaveAccount.setOnClickListener {
+            val intent = Intent(this, LogInActivity::class.java)
             startActivity(intent)
         }
     }
