@@ -39,7 +39,8 @@ class SearchFragment : Fragment() {
         adapter = MenuAdapter(
             filteredMenuFoodName,
             filteredMenuItemPrice,
-            filteredMenuImage
+            filteredMenuImage,
+            requireContext()
         )
         binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.menuRecyclerView.adapter = adapter
